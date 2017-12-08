@@ -1,0 +1,19 @@
+# Brewfile
+tap "caskroom/versions"
+tap "ravenac95/sudolikeaboss"
+
+# some packages
+install "battery"
+install "git"
+install "git-extras"
+install "git-lfs"
+install "python"
+install "ssh-copy-id"
+install "wget"
+install "wifi-password"
+install "sudolikeaboss"
+
+cask install "sublime-text"
+cask install "google-chrome"
+cask install "docker-edge"
+cask install "slack"
