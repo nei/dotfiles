@@ -11,13 +11,13 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Symlinks
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/configs/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/configs/.zshrc" ~
+ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
+ln -sfv "$DOTFILES_DIR/bash/.zshrc" ~
 
 # Package managers & packages
-. "$DOTFILES_DIR/install/brew.sh"
-. "$DOTFILES_DIR/install/npm.sh"
-. "$DOTFILES_DIR/install/oh-my-zsh.sh"
+. "$DOTFILES_DIR/brew/install.sh"
+. "$DOTFILES_DIR/bash/oh-my-zsh.sh"
+. "$DOTFILES_DIR/npm/install.sh"
 
 # Some IOS settings
-. "$DOTFILES_DIR/macosdefaults.sh"
+. "$DOTFILES_DIR/macOS/macosdefaults.sh"
