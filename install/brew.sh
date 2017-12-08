@@ -1,6 +1,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap Goles/battery
+brew tap caskroom/versions
 brew tap ravenac95/sudolikeaboss
 
 brew update
@@ -19,5 +20,12 @@ apps=(
   wifi-password
   sudolikeaboss
 )
-
 brew install "${apps[@]}"
+
+# 'cause dragging icons is not fun
+caskApps=(
+	sublime-text
+	google-chrome
+	docker-edge
+)
+brew cask install "${caskApps[@]}"
