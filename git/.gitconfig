@@ -9,6 +9,9 @@
   editor = vim
   autocrlf = input
 
+[help]
+	autocorrect = 1 # Automatically correct and execute mistyped commands
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

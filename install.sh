@@ -13,6 +13,7 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.zshrc" ~
+ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 
 # Package managers & packages
 . "$DOTFILES_DIR/brew/install.sh"

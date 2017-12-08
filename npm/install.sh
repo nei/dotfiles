@@ -1,12 +1,5 @@
 brew install nvm
 
-export DOTFILES_BREW_PREFIX_NVM=`brew --prefix nvm`
-
-. "${DOTFILES_DIR}/system/.nvm"
-
-nvm install 8
-nvm alias default 8
-
 # Globally install with npm
 
 packages=(
@@ -15,6 +8,7 @@ packages=(
   historie
   nodemon
   npm
+  nvm
   release-it
   spot
   superstatic
@@ -24,3 +18,11 @@ packages=(
 )
 
 npm install -g "${packages[@]}"
+
+mkdir ~/.nvm
+export NVM_DIR=~/.nvm
+
+export DOTFILES_BREW_PREFIX_NVM=`brew --prefix nvm`
+
+nvm install 8
+nvm alias default 8
