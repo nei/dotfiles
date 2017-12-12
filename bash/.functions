@@ -5,6 +5,16 @@ function dbash() {
 	docker exec -it $(docker ps -aqf "name=$1") bash;
 }
 
+# execute a make inside container
+function dmake() {
+	docker exec -it $(docker ps -aqf "name=web") make $1; 
+}
+
+# execute php inside container, useful for clean cache cmds
+function dphp() {
+	docker exec -it $(docker -u www-data ps -aqf "name=web") php "$@"; 
+}
+
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
