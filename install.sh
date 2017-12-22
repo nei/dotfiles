@@ -6,9 +6,6 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Utils
 PATH="$DOTFILES_DIR/bin:$PATH"
 
-# Install some useful stuff
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Symlinks
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
