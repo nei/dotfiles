@@ -12,7 +12,7 @@ function dmake() {
 
 # execute php inside container, useful for clean cache cmds
 function dphp() {
-	docker exec -it $(docker -u www-data ps -aqf "name=web") php "$@"; 
+	docker exec -it -u www-data $(docker  ps -aqf "name=web") php "$@"; 
 }
 
 # `o` with no arguments opens the current directory, otherwise opens the given

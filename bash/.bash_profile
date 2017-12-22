@@ -5,8 +5,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HISTSIZE=""
 # Avoid duplicates on history
 export HISTCONTROL=ignoredups:erasedups  
-# When the shell exits, append to the history file instead of overwriting it
-shopt -s histappend
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
