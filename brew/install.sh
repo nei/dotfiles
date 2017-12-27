@@ -22,7 +22,7 @@ brew install "ssh-copy-id"
 brew install "wget"
 brew install "wifi-password"
 brew install "sudolikeaboss"
-
+brew install htop
 brew cask install "sublime-text"
 brew cask install "google-chrome"
 brew cask install "docker-edge"
