@@ -23,6 +23,8 @@ brew install "wget"
 brew install "wifi-password"
 brew install "sudolikeaboss"
 brew install htop
+brew install awk
+
 brew cask install "sublime-text"
 brew cask install "google-chrome"
 brew cask install "docker-edge"
@@ -32,4 +34,4 @@ brew cask install "spotify"
 brew cask install "macs-fan-control"
 brew cask install "iterm2-beta"
 brew cask install "mysqlworkbench"
-
+brew cask install google-cloud-sdk
