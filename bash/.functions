@@ -5,6 +5,11 @@ function dbash() {
 	docker exec -it $(docker ps -qf "name=$1$") bash;
 }
 
+# easy access to mysql container
+function dmysql() {
+  docker exec -it $(docker ps -qf "name=mysql") mysql "$@";
+}
+
 # execute a make inside container
 function dmake() {
 	docker exec -it $(docker ps -aqf "name=web") make $1; 
