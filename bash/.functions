@@ -2,7 +2,7 @@
 
 # access container's bash by matching name
 function dbash() { 
-	docker exec -it $(docker ps -aqf "name=$1") bash;
+	docker exec -it $(docker ps -qf "name=$1$") bash;
 }
 
 # execute a make inside container
