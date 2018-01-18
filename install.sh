@@ -12,6 +12,11 @@ ln -sfv "$DOTFILES_DIR/bash/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/bash/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 
+# force read new definitions
+source ~/.bash_profile
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
 # Package managers & packages
 . "$DOTFILES_DIR/brew/install.sh"
 . "$DOTFILES_DIR/bash/oh-my-zsh.sh"
