@@ -59,7 +59,7 @@ ZSH_THEME="fishy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git docker osx
+  git docker osx symfony2
 )
 
 source $ZSH/oh-my-zsh.sh
