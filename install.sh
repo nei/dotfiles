@@ -13,11 +13,8 @@ ln -sfv "$DOTFILES_DIR/bash/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 
 # Claude Code
-mkdir -p ~/.claude/plugins
 ln -sfv "$DOTFILES_DIR/claude/settings.json" ~/.claude/settings.json
 ln -sfv "$DOTFILES_DIR/claude/remote-settings.json" ~/.claude/remote-settings.json
-ln -sfv "$DOTFILES_DIR/claude/plugins/blocklist.json" ~/.claude/plugins/blocklist.json
-ln -sfv "$DOTFILES_DIR/claude/plugins/known_marketplaces.json" ~/.claude/plugins/known_marketplaces.json
 ln -sfv "$DOTFILES_DIR/claude/scripts" ~/.claude/scripts
 ln -sfv "$DOTFILES_DIR/claude/skills" ~/.claude/skills
 
