@@ -7,7 +7,7 @@ export ZSH=/Users/neisantos/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="fishy"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -93,3 +93,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 export PATH="/usr/local/opt/bzip2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.4/sbin:$PATH"
+export PATH="$HOME/.snow:$PATH"
+eval "$(mise activate zsh)"
